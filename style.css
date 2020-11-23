@@ -1,0 +1,132 @@
+body {
+    text-align: center;
+    background: #1A1A1A;
+    font-family: sans-serif;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+    font-size: 40px;
+    margin: 40px 0px 20px;
+}
+
+#clockdiv {
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+}
+
+#clockdiv>div {
+    padding: 10px;
+    border-radius: 3px;
+    background: #FFCC00;
+    display: inline-block;
+}
+
+#clockdiv div>span {
+    padding: 15px;
+    border-radius: 3px;
+    background: #ffe787;
+    display: inline-block;
+}
+
+.smalltext {
+    padding-top: 5px;
+    font-size: 16px;
+}
+
+.countdown-container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.boom {
+    cursor: pointer;
+
+    -webkit-animation-name: pulse;
+    -moz-animation-name: pulse;
+    -ms-animation-name: pulse;
+    -o-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-duration: 1000ms;
+    -moz-animation-duration: 1000ms;
+    -ms-animation-duration: 1000ms;
+    -o-animation-duration: 1000ms;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-timing-function: ease-in-out;
+    -ms-animation-timing-function: ease-in-out;
+    -o-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-play-state: running;
+    -moz-animation-play-state: running;
+    -ms-animation-play-state: running;
+    -o-animation-play-state: running;
+    animation-play-state: running;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite
+}
+
+@keyframes pulse {
+    0% {
+        -webkit-transform: scale(1.0, 1.0);
+    }
+
+    50% {
+
+        opacity: .7
+    }
+
+    100% {}
+}
+
+#clockdiv {
+    padding-bottom: 80px;
+    margin-bottom: 0px;
+    border-bottom: 1px solid #fff;
+    transition: .6s;
+}
+
+.info-title {
+    font-weight: 100;
+    font-size: 30px;
+    margin: 40px 0px 20px;
+    color: #fff;
+    font-weight: 700;
+    transition: .6s;
+}
+
+.info-btn {
+    transition: .6s;
+}
+
+.info-text {
+    transition: .6s;
+    color: #fde277;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 768px) {
+    .info-text {
+        width: 100%;
+    }
+
+    .info-title {
+        line-height: 120%;
+        font-size: 24px;
+        color: #fde277;
+    }
+}
