@@ -60,3 +60,7 @@ $('.info-btn').click(function () {
         $('.info-text').css('opacity', '1');
     }, 600);
 })
+
+$('.boom-animate').click(function(){
+    $('.boom-animate').removeClass('boom-animate');
+})
