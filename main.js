@@ -49,18 +49,114 @@ $(function () {
 $('.info-btn').click(function () {
     $('.info-title').css('opacity', '0');
     $('.info-btn').css('opacity', '0');
-    setTimeout(function () {
-        $('.info-title').text('Найцікавіші пригоди починаються з таємниці');
-        $('.info-title').css('opacity', '1');
-        $('.info-title').css('color', '#FFCC00');
+    if ($(this).attr('data-info') == 'no') {
+        setTimeout(function () {
+            $('.info-title').html('А уже фсьо');
+            
+            setTimeout(function () { 
+                $('.info-title').html('А уже фсьо.</br> ');
+             }, 500);
 
-        $('.info-btn').css('display', 'none');
+             setTimeout(function () { 
+                $('.info-title').html('А уже фсьо..</br> ');
+             }, 1000);
 
-        $('.info-text').html('Будь готовий! Історія стартує о 22:00. Приїдь на білому коні на місце, вказане на квитку. З собою візьми все, що тобі може знадобитися упродовж 3 днів + фотік, термочашку, ніж (бо ніколи не вгадаєш, куди заведе дорога). </br> Про все інше подбають котики. М\'яуяяяяу');
-        $('.info-text').css('opacity', '1');
-    }, 600);
+             setTimeout(function () { 
+                $('.info-title').html('А уже фсьо...</br> ');
+             }, 1500);
+
+             setTimeout(function () { 
+                $('.info-title').html('А уже фсьо... </br> А');
+             }, 2500);
+
+             setTimeout(function () { 
+                $('.info-title').html('А уже фсьо... </br> А н');
+             }, 2700);
+
+             setTimeout(function () { 
+                $('.info-title').html('А уже фсьо... </br> А на');
+             }, 2600);
+
+             setTimeout(function () { 
+                $('.info-title').html('А уже фсьо... </br> А над');
+             }, 2750);
+
+             setTimeout(function () { 
+                $('.info-title').html('А уже фсьо... </br> А надо');
+             }, 3100);
+
+             setTimeout(function () { 
+                $('.info-title').html('А уже фсьо... </br> А надо б');
+             }, 3300);
+
+             setTimeout(function () { 
+                $('.info-title').html('А уже фсьо... </br> А надо би');
+             }, 3400);
+
+             setTimeout(function () { 
+                $('.info-title').html('А уже фсьо... </br> А надо бил');
+             }, 3430);
+
+             setTimeout(function () { 
+                $('.info-title').html('А уже фсьо... </br> А надо било');
+             }, 3570);
+
+             setTimeout(function () { 
+                $('.info-title').html('А уже фсьо... </br> А надо било р');
+             }, 3700);
+
+             setTimeout(function () { 
+                $('.info-title').html('А уже фсьо... </br> А надо било ра');
+             }, 3900);
+
+             setTimeout(function () { 
+                $('.info-title').html('А уже фсьо... </br> А надо било ран');
+             }, 4100);
+
+             setTimeout(function () { 
+                $('.info-title').html('А уже фсьо... </br> А надо било рань');
+             }, 4220);
+
+             setTimeout(function () { 
+                $('.info-title').html('А уже фсьо... </br> А надо било раньш');
+             }, 4350);
+
+             setTimeout(function () { 
+                $('.info-title').html('А уже фсьо... </br> А надо било раньш');
+             }, 4400);
+
+             setTimeout(function () { 
+                $('.info-title').html('А уже фсьо... </br> А надо било раньше');
+             }, 4500);
+
+
+
+
+            
+            $('.info-title').css('opacity', '1');
+            $('.info-title').css('color', '#FFCC00');
+
+            $('.info-btn').css('display', 'none');
+
+            $('.info-text').html('');
+            $('.info-text').css('opacity', '1');
+        }, 600);
+    } else {
+        setTimeout(function () {
+            $('.info-title').text('Найцікавіші пригоди починаються з таємниці');
+            $('.info-title').css('opacity', '1');
+            $('.info-title').css('color', '#FFCC00');
+
+            $('.info-btn').css('display', 'none');
+
+            $('.info-text').html('Будь готовий! Історія стартує о 22:00. Приїдь на білому коні на місце, вказане на квитку. З собою візьми все, що тобі може знадобитися упродовж 3 днів + фотік, термочашку, ніж (бо ніколи не вгадаєш, куди заведе дорога). </br> Про все інше подбають котики. М\'яуяяяяу');
+            $('.info-text').css('opacity', '1');
+        }, 600);
+    }
 })
 
-$('.boom-animate').click(function(){
-    $('.boom-animate').removeClass('boom-animate');
-})
+$(document).ready(function () {
+    $('.boom-animate').click(function () {
+        $('.boom-animate').removeClass('boom-animate');
+    })
+});
