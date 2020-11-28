@@ -160,3 +160,12 @@ $(document).ready(function () {
         $('.boom-animate').removeClass('boom-animate');
     })
 });
+
+var str = 'Андрій, а що ти забув в консолі?';
+var style = ['padding: 1rem 5rem;',
+  'background: linear-gradient(to bottom right, #000, #454545);',
+  'text-shadow: 0 2px #000;',
+  'font: 1.3rem/3 Georgia;',
+  'color: #fff;'].join('');
+
+console.log ( '%c%s', style, str );
