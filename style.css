@@ -6,7 +6,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 h1 {
@@ -14,6 +14,7 @@ h1 {
     font-weight: 100;
     font-size: 40px;
     margin: 40px 0px 20px;
+    margin-top: 40px;
 }
 
 #clockdiv {
@@ -47,7 +48,10 @@ h1 {
 .countdown-container {
     padding-left: 15px;
     padding-right: 15px;
+    transition: 1s;
+    padding-bottom: 100px;
 }
+
 
 .boom {
     cursor: pointer;
@@ -87,7 +91,7 @@ h1 {
 
     50% {
 
-        opacity: .7
+        opacity: .8
     }
 
     100% {
@@ -101,10 +105,10 @@ h1 {
     -ms-animation-name: scale;
     -o-animation-name: scale;
     animation-name: scale;
-    -webkit-animation-duration: 1000ms;
-    -moz-animation-duration: 1000ms;
-    -ms-animation-duration: 1000ms;
-    -o-animation-duration: 1000ms;
+    -webkit-animation-duration: 600ms;
+    -moz-animation-duration: 600ms;
+    -ms-animation-duration: 600ms;
+    -o-animation-duration: 600ms;
     -webkit-animation-timing-function: ease-in-out;
     -moz-animation-timing-function: ease-in-out;
     -ms-animation-timing-function: ease-in-out;
@@ -166,7 +170,23 @@ h1 {
     opacity: 0;
 }
 
-@media (max-width: 768px) {
+.video{
+    width: 100%;
+    height: auto;
+    display: none;
+    background-color: #1A1A1A;
+}
+
+.video video{
+    width: 100%;
+    outline: none;
+}
+
+.rotate{
+    display: none;
+}
+
+@media (max-width: 992px) {
     .info-text {
         width: 100%;
     }
@@ -176,4 +196,40 @@ h1 {
         font-size: 24px;
         color: #fde277;
     }
+
+    .video{
+        width: auto;
+        height: 100vh;
+        display: none;
+    }
+
+    .video video{
+        margin: 0 auto;
+        width: auto;
+        height: 100%;
+    }
+
 }
+
+@media (max-width: 450px){
+    .video{
+        width: 100%;
+        height: auto;
+        display: none;
+    }
+
+    .video video{
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+    }
+
+    .rotate{
+        display: block;
+        width: 70px;
+        margin: 0 auto;
+        opacity: 0;
+        transition: .6s;
+    }
+}
+
